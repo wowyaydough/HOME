@@ -10,8 +10,17 @@
   }
 
   &-content {
-    @include pos-center-x;
-    top: 12%;
+    position: relative;
+
+    @media screen and (min-width: $md-breakpoint) {
+      top: 34%;
+      left: -20%;
+    }
+
+    @media screen and (max-width: ($md-breakpoint - 1)) {
+      top: 13%;
+      left: 0;
+    }
 
     .main-text {
       @include text-style(24, $primary);
@@ -23,4 +32,8 @@
       }
     }
   }
+}
+
+.logopng {
+  width: 40px;
 }
