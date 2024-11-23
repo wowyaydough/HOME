@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doyeon's Portfolio</title>
+    <meta name="msapplication-TileColor" content="#2b5797" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+   
+  </head>
+
+  <body>
+    <header class="gnb">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="gnb-wrapper">
+              <div class="gnb-left">
+                <h1 class="logo gnb-txt-button">
+                  <a href="/"> Doyeon's Homepage </a>
+                </h1>
+
+                <button class="gnb-menu-button sm-only" aria-label="open menu">
+                  <i class="ic-Menu"></i>
+                </button>
+              </div>
+
+              <div class="gnb-right sm-hidden">
+                <nav class="gnb-nav">
+                  <h2 class="visually-hidden">menu</h2>
+                  <ul class="button-group gnb-nav-list">
+                    <li class="gnb-nav-item gnb-txt-button">
+                      <a href="#about" aria-label="go to about page"> About </a>
+                    </li>
+                    <li class="gnb-nav-item gnb-txt-button">
+                      <a href="#portfolio" aria-label="go to portfolio page">
+                        Portfolio</a
+                      >
+                    </li>
+                    <li class="gnb-nav-item gnb-txt-button gnb-mode-change visually-hidden">
+                      <button
+                        type="button"
+                        aria-label="change mode from light to dark"
+                        class="gnb-mode-change-btn"
+                      >
+                        Dark
+                      </button>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- title -->
+    <section class="title">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="title-wrapper">
+              <h2 class="visually-hidden">title</h2>
+              <div class="title-content">
+                <p class="main-text main-text-top">나답게, 새롭게</p>
+                <p class="main-text main-text-bottom">오늘을 행복하게</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & contact  -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="about-wrapper">
+              <h2 class="visually-hidden">about</h2>
+
+              <div class="about-content">
+                <div class="about-content-img">
+                  <img src="./../assets/img/image.jpg" alt="여자사진" />
+                </div>
+
+                <ul class="about-content-text-list">
+                  <li class="about-content-text-list-item">
+                    <p>이름 : 황도연</p>
+                  </li>
+                  <li class="about-content-text-list-item">
+                    <p>교육과정 : 이젠모란 웹퍼블리셔 5개월</p>
+                  </li>
+                  <li class="about-content-text-list-item">
+                    <p class="email">E-mail : makemyownway@naver.com</p>
+                  </li>
+                  <li>
+                    <li class="about-content-text-list-item">
+                      <p>
+                        Go to Github
+                        <a
+                        href="https://github.com/wowyaydough/wowyaydough.github.io"
+                        style="color: blue"
+                        >Homepage</a
+                      >
+                        </p>
+                      </li>
+                    <ul class="about-content-skill-list">
+                      <li class="about-content-skill-list-item html">
+                        <a href="https://github.com/wowyaydough/wowyaydough.github.io/blob/main/index.html"
+                        target="_blank"><img src="./assets/img/skill/html.png" alt=""
+                        /></a>
+                      </li>
+                      <li class="about-content-skill-list-item css">
+                        <a href="https://github.com/wowyaydough/wowyaydough.github.io/blob/main/style.css"
+                        target="_blank"><img src="./assets/img/skill/css.png" alt=""
+                          />
+                        </a>
+                      </li>
+                      <li class="about-content-skill-list-item javascript">
+                        <a href="https://github.com/wowyaydough/wowyaydough.github.io/blob/main/script.js"
+                        target="_blank">
+                          <img src="./assets/img/skill/js.png" alt="" />
+                        </a>
+                      </li>
+                      <li class="about-content-skill-list-item sass">
+                        <a href="https://github.com/wowyaydough/wowyaydough.github.io/tree/main/styles"
+                        target="_blank"><img src="./assets/img/skill/ss.png" alt=""
+                        /></a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="portfolio-wrapper">
+              <h2 class="visually-hidden">portfolio</h2>
+              <div class="portfolio-content">
+                <div class="page-tab-wrapper">
+                  <ul class="tab-list visually-hidden">
+                    <li class="tab-item">
+                      <button class="portfolio-click-btn  tab-btn">Slide</button>
+                    </li>
+                    <li class="tab-item">
+                      <button class="portfolio-click-btn tab-btn">
+                        Sort array
+                      </button>
+                    </li>
+                  </ul>
+                  <div class="tab-page-content">
+                      <!-- slide -->
+                    <div class="portfolio-slide-wrapper tab-page">
+                      <div class="portfolio-slide">
+                        <ul class="portfolio-list">
+                          <li class="portfolio-item">
+                            <a href="https://wowyaydough.github.io/Asty/"
+                              ><img src="./assets/img/portfolio/asty.jpg" alt=""
+                            />
+                          </a>
+                          </li>
+                          <li class="portfolio-item">
+                            <a href="https://wowyaydough.github.io/BaskinRobbins/"
+                              ><img src="./assets/img/portfolio/BR.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li class="portfolio-item">
+                            <a href="https://wowyaydough.github.io/Etude"
+                              ><img src="./assets/img/portfolio/Etude.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li class="portfolio-item">
+                            <a href="https://wowyaydough.github.io/gjcity"
+                              ><img src="./assets/img/portfolio/gjcity.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li class="portfolio-item">
+                            <a href="https://wowyaydough.github.io/ISTEC"
+                              ><img src="./assets/img/portfolio/ISTEC.jpg" alt=""
+                            /></a>
+                          </li>
+                          <li class="portfolio-item">
+                            <a href="https://wowyaydough.github.io/pf4_hitejinro"
+                              ><img
+                                src="./assets/img/portfolio/hitejinro.jpg"
+                                alt=""
+                            /></a>
+                          </li>
+                    
+                        </ul>
+                      </div>
+
+                      <div class="portfolio-pagination">
+                        <ul class="portfolio-pagination-btn-list">
+                          <ul class="list-of-number">
+                            <li class="portfolio-pagination-btn-item">
+                              <button class="portfolio-btn-one pagination-btn" type="button">
+                                1
+                              </button>
+                            </li>
+                            <li class="portfolio-pagination-btn-item">
+                              <button class="portfolio-btn-two pagination-btn" type="button">
+                                2
+                              </button>
+                            </li>
+                            <li class="portfolio-pagination-btn-item">
+                              <button class="portfolio-btn-three pagination-btn" type="button">
+                                3
+                              </button>
+                            </li>
+                            <li class="portfolio-pagination-btn-item">
+                              <button class="portfolio-btn-four pagination-btn" type="button">
+                                4
+                              </button>
+                            </li>
+                            <li class="portfolio-pagination-btn-item">
+                              <button class="portfolio-btn-five pagination-btn" type="button">
+                                5
+                              </button>
+                            </li>
+                            <li class="portfolio-pagination-btn-item">
+                              <button class="portfolio-btn-six pagination-btn" type="button">
+                                6
+                              </button>
+                            </li>
+                          </ul>
+                          <ul class="prevnext">
+                            <li class="portfolio-pagination-btn-item">
+                              <button class="prev" type="button">prev</button>
+                            </li>
+                            
+                            <li class="portfolio-pagination-btn-item">
+                              <button class="next" type="button">next</button>
+                            </li>
+                          </ul>
+                          
+                        </ul>
+                      </div>
+
+                      <div class="show-code-wrapper">
+                        <div>
+                          <a href="/" class="show-code portfolio-click-btn" target="_blank">View code</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./script.js">
+  </script>
+</html>
