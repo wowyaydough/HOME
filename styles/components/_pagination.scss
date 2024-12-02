@@ -41,8 +41,7 @@
     transition: all 1s ease-in-out;
 
     &:hover {
-      color: $primary;
-      border-color: $primary;
+      border-color: $border-hover;
     }
 
     &:active {
@@ -67,14 +66,23 @@ $bordertriangle: 13px;
   border-right: $bordertriangle solid transparent;
   border-bottom: $bordertriangle solid transparent;
   border-left: $bordertriangle solid transparent;
+  transition: all 1s ease-in-out;
 }
 
 .prev {
   left: -20%;
   border-right: $bordertriangle solid $border;
+
+  &:hover {
+    border-right-color: $border-hover;
+  }
 }
 
 .next {
   right: -20%;
   border-left: $bordertriangle solid $border;
+
+  &:hover {
+    border-left-color: $border-hover;
+  }
 }
