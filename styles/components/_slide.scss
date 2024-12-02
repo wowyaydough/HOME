@@ -11,6 +11,11 @@ $startwidth: ($portfoliowidth / 2) + ($portfoliowidth * 2);
     overflow: hidden;
     border: 1px solid $border;
     border-radius: 20px;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      border-color: $border-hover;
+    }
   }
 
   &-list {
@@ -85,6 +90,11 @@ $startwidth: ($portfoliowidth / 2) + ($portfoliowidth * 2);
     text-align: center;
     border: 1px solid $border;
     border-radius: 3px;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      border-color: $border-hover;
+    }
 
     @media screen and (min-width: $md-breakpoint) {
       border: 1px solid transparent;
