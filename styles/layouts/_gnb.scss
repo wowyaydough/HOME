@@ -1,0 +1,70 @@
+.gnb {
+  position: fixed;
+  background-color: $white;
+  border-bottom: 1px solid $border;
+  width: 100vw;
+  z-index: 2;
+  opacity: 0.9;
+
+  &-wrapper {
+    @include flexbox(between);
+    height: 50px;
+  }
+
+  &-txt-button {
+    @include text-style(16, $primary);
+    font-weight: 450;
+    padding: 10px;
+  }
+
+  &-left {
+    .logo {
+      display: block;
+      @include pos-center;
+    }
+  }
+
+  &-menu-button {
+    @include flexbox;
+    width: 32px;
+    height: 32px;
+    font-size: 24px;
+    color: $secondary;
+  }
+
+  &-right {
+    .button-group {
+      @include flexbox(between);
+    }
+  }
+
+  &-nav {
+    &-item {
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .gnb-mode-change-btn {
+    min-width: 46px;
+    padding: 3px 5px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid transparent;
+    border-radius: 3px;
+  }
+
+  @include responsive(T) {
+    &-wrapper {
+      height: 80px;
+    }
+
+    .logo {
+      position: static;
+      transform: none;
+    }
+  }
+}

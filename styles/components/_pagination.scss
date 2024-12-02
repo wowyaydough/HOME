@@ -1,0 +1,88 @@
+.portfolio-pagination {
+  margin: 15px 0;
+
+  &-btn-list {
+    @include flexbox(between);
+  }
+
+  .list-of-number {
+    @include flexbox(between);
+    width: 100%;
+  }
+
+  @media screen and (min-width: $md-breakpoint) {
+    .portfolio-pagination-btn-list {
+      @include flexbox;
+    }
+
+    .list-of-number {
+      width: 80%;
+
+      .portfolio-pagination-btn-item {
+        width: 6px;
+        height: 6px;
+        background-color: $border;
+        border-radius: 50%;
+
+        button {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  .pagination-btn {
+    min-width: 20px;
+    @include flexbox;
+    padding: 3px 6px;
+    @include text-style(12, $secondary);
+    border: 1px solid $border;
+    border-radius: 3px;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      border-color: $border-hover;
+    }
+
+    &:active {
+      font-weight: 700;
+      color: $blue;
+      border-color: $blue-dark;
+    }
+  }
+}
+
+$bordertriangle: 13px;
+
+.prev,
+.next {
+  position: absolute;
+  top: 38%;
+  display: block;
+  width: 0;
+  height: 0;
+  color: transparent;
+  border-top: $bordertriangle solid transparent;
+  border-right: $bordertriangle solid transparent;
+  border-bottom: $bordertriangle solid transparent;
+  border-left: $bordertriangle solid transparent;
+  transition: all 1s ease-in-out;
+}
+
+.prev {
+  left: -20%;
+  border-right: $bordertriangle solid $border;
+
+  &:hover {
+    border-right-color: $border-hover;
+  }
+}
+
+.next {
+  right: -20%;
+  border-left: $bordertriangle solid $border;
+
+  &:hover {
+    border-left-color: $border-hover;
+  }
+}
