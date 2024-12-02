@@ -1,0 +1,39 @@
+.title {
+  &-wrapper {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/img/title.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &-content {
+    position: relative;
+
+    @media screen and (min-width: $md-breakpoint) {
+      top: 34%;
+      left: -20%;
+    }
+
+    @media screen and (max-width: ($md-breakpoint - 1)) {
+      top: 13%;
+      left: 0;
+    }
+
+    .main-text {
+      @include text-style(24, $primary);
+      @include flexbox;
+      font-weight: 700;
+
+      &-top {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}
+
+.logopng {
+  width: 40px;
+}

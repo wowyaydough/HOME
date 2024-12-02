@@ -1,0 +1,103 @@
+$portfoliowidth: 50;
+$startwidth: ($portfoliowidth / 2) + ($portfoliowidth * 2);
+
+.portfolio {
+  &-slide-wrapper {
+    width: $portfoliowidth + vw;
+  }
+
+  &-slide {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid $border;
+    border-radius: 20px;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      border-color: $border-hover;
+    }
+  }
+
+  &-list {
+    @include flexbox;
+    transform: translate($startwidth + vw, 0);
+    transition: all 1.5s ease-in-out;
+  }
+
+  &-item {
+    a {
+      display: block;
+      width: 100%;
+
+      img {
+        display: block;
+        width: $portfoliowidth + vw;
+      }
+    }
+  }
+
+  @media screen and (min-width: $md-breakpoint) {
+    $tabletwidth: 40;
+    $tabletstart: 100;
+
+    .portfolio {
+      &-slide-wrapper {
+        width: $tabletwidth + vw;
+      }
+
+      &-list {
+        transform: translate(($tabletstart + vw), 0);
+      }
+
+      &-item {
+        a {
+          img {
+            width: ($tabletwidth) + vw;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: $lg-breakpoint) {
+    $desktopwidth: 30;
+    $desktopstart: 75;
+
+    .portfolio {
+      &-slide-wrapper {
+        width: $desktopwidth + vw;
+      }
+
+      &-list {
+        transform: translate(($desktopstart + vw), 0);
+      }
+
+      &-item {
+        a {
+          img {
+            width: ($desktopwidth) + vw;
+          }
+        }
+      }
+    }
+  }
+
+  &-click-btn {
+    @include text-style(16, $secondary);
+    position: relative;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid $border;
+    border-radius: 3px;
+    transition: all 1s ease-in-out;
+
+    &:hover {
+      border-color: $border-hover;
+    }
+
+    @media screen and (min-width: $md-breakpoint) {
+      border: 1px solid transparent;
+    }
+  }
+}
