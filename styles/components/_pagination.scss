@@ -24,6 +24,10 @@
         background-color: $border;
         border-radius: 50%;
 
+                &:hover {
+          transform: scale(2.5);
+        }
+
         button {
           opacity: 0;
         }
